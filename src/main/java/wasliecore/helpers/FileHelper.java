@@ -103,8 +103,9 @@ public class FileHelper {
 	}
 	
 	public static void addDonators(){
+		String urlString = "https://dl.dropboxusercontent.com/u/46500170/Site/donator_list.txt";
 		try{
-			URL url = new URL("https://dl.dropboxusercontent.com/u/46500170/Site/donator_list.txt");
+			URL url = new URL(urlString);
 
 			Scanner scanner = new Scanner(url.openStream());
 			
@@ -116,7 +117,7 @@ public class FileHelper {
 			}
 			scanner.close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("WaslieCore could not get file "+urlString);
 		}
 	}
 	public static HashMap<String, Double> donators = new HashMap<String, Double>();
