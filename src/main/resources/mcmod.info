@@ -11,6 +11,7 @@
   "credits": "Wasliebob: For creating this",
   "logoFile": "",
   "screenshots": [],
+  "requiredMods": ["Forge"],
   "dependencies": []
 }
 ]
